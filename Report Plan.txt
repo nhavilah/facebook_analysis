@@ -1,0 +1,35 @@
+Report Plan:
+- Find most frequent words used in the comments
+- Find the overall sentiment of the comments
+- Find general theme of comments(if they are questions, complaints, etc)
+- How many comments included @mentions or external links
+- What were the external links pointing to?
+
+Dataset For Training Used: https://raw.githubusercontent.com/saodem74/Sentiment-Analysis/master/Data/comment_data.csv
+
+Things to do this week:
+Find most recurring words in dataset
+Find/train NLP model to read sentiment of comments
+Create document of the results
+
+Whats Done So Fat:
+Fetching dataset
+Retrieving comments
+
+
+How do we want to do this?
+Create objects with the following structure
+post: {
+    date: , 
+    time: ,
+    likes: ,
+    shares: ,
+    comments: ,
+    post_url: ,
+    text: ,
+    comments_sentiment: {
+        happy: 90%,
+        unhappy: 5%,
+        neutral: 5%,
+    },
+}
